@@ -1,0 +1,167 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+1. Vị trí 
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, ...)
+ */
+/* 
+làm từ ngoài vào trong
+từ trên xuống dưới
+từ tổng quan đến chi tiết
+*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+
+}
+#header {
+    
+}
+#nav
+{
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style: none;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0px 24px;
+    display: block;
+
+}
+#nav li:hover .subnav {
+    display: block;
+    min-width: 160px;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#nav .nav-arrow-down {
+    font-size: 10px;
+}
+#header .searchbutton {
+    float: right;
+    padding: 0px 22px 0 22px;
+
+    
+}
+#header .searchbutton:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icons {
+    font-size: 14px;
+    color: #fff;
+    line-height: 46.5px;
+    
+
+}
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38.5px;
+}
+
+#header {
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#slider {
+    position: relative;
+}
+#slider .text-contain {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#slider .text-header{
+    font-size: 24px;
+    font-style: bold;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+#slider {
+background-color: #333;
+margin-top: 46.5px;
+padding-top: 56.25%;
+background: url('/w3_the_band/assets/img/slider1/chicago.jpg') top center /cover no-repeat;
+/* opacity: 0.8; */
+}
+
+#content {
+    height: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+#content .theband {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 64px 16px;
+}
+#content .heading {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#content .sub-heading {
+    opacity: 0.60;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .section-text {
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+#footer {
+
+}
